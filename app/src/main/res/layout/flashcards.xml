@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x + 5 = 10" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x *  6 = 600" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x + 71 = 100" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x / 8 = 15" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x + 9 = 10" />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x - 24 = 10" />
+
+    <Switch
+        android:id="@+id/switch7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x + 41 = 30" />
+
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x * 3 = 42" />
+
+    <Switch
+        android:id="@+id/switch9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="             x + 4 = 10" />
+</LinearLayout>
