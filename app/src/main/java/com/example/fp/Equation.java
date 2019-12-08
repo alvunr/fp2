@@ -47,7 +47,7 @@ public class Equation extends AppCompatActivity {
 
 
     private String answerz [] = { // stored in an array
-            "5", "100", "29", "90", "1", "34", "-11", "14", "6"
+            "5","", "",  "100", "", "",  "29", "", "", "90", "", "",  "1", "", "",  "34", "", "",  "-11", "", "",  "14", "", "", "6"
     };
 //    private String choices[][] = {
 //            {"-5, 5, 15"},

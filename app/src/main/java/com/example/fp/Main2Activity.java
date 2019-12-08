@@ -14,7 +14,7 @@ public class Main2Activity extends AppCompatActivity {
     Button option1; // button A
     Button option2; // Button B
     Button option3; // Button C
-    int max = 9;
+    int max = 23;
 
     private int numberOfQuestions = 0;
     private String answers;
