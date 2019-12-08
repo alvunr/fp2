@@ -41,58 +41,26 @@ public class Equation extends AppCompatActivity {
 //        return " ";
 //    }
     private String questions [] = {
-            "x + 5 = 10", "", "", "x * 6 = 600", "", "",  "x + 71 = 100", "", "",  "x / 8 = 15", "", "",  "x + 9 = 10", "", "",
-            "x - 24 = 10", "", "",  "x + 41 = 30", "", "",  "x * 3 = 42", "", "",  "x + 4 = 10"
+            "x + 5 = 10","x * 6 = 600", "x + 71 = 100", "x / 8 = 15", "x + 9 = 10",
+            "x - 24 = 10", "x + 41 = 30","x * 3 = 42", "x + 4 = 10"
     };
 
 
     private String answerz [] = { // stored in an array
-            "5","", "",  "100", "", "",  "29", "", "", "90", "", "",  "1", "", "",  "34", "", "",  "-11", "", "",  "14", "", "", "6"
+            "5",  "100", "29", "90", "1", "34",  "-11", "14", "6"
     };
 
-//    private String choices[][] = {
-//            {"-5, 5, 15"},
-//            {"100, 99, 10"},
-//            {"39, 21, 29"},
-//            {"120, 80, 70"},
-//            {"-1, 1, 0"},
-//            {"14, 24, 34"},
-//            {"11, -11, 31"},
-//            {"18, 14, 16"},
-//            {"-6, 16, 6"}
-//    };
-
-    private String choices[] = {
-            "-5",
-            "5",
-            "15",
-            "100",
-            "99",
-            "10",
-            "39",
-            "21",
-            "29",
-            "120",
-            "80",
-            "70",
-            "-1",
-            "1",
-            "0",
-            "14",
-            "24",
-            "34",
-            "11",
-            "-11",
-            "31",
-            "18",
-            "14",
-            "16",
-            "-6",
-            "16",
-            "6"
-};
-
-
+    private String choices[][] = {
+            {"-5", "5", "15"},
+            {"100", "99", "10"},
+            {"39", "21", "29"},
+            {"120", "80", "70"},
+            {"-1", "1", "0"},
+            {"14", "24", "34"},
+            {"11", "-11", "31"},
+            {"18", "14", "16"},
+            {"-6", "16", "6"}
+    };
 
     public String getQuestions(int i) {
         String que = questions[i];
@@ -112,29 +80,28 @@ public class Equation extends AppCompatActivity {
 
     //Below: getter for each option
     public String getOption1(int i) {
-        String option1 = choices[i];
+        String option1 = choices[i][0];
         if (i % 3 == 0) {
             return option1;
         }
-
-        return null;
+        return option1;
         // row of the array is being set to i and changing the index every time being updated
         // the coloumn is being set to a constant
     }
     public String getOption2(int i) {
-        String option2 = choices[i];
+        String option2 = choices[i][1];
         if (i % 3 == 1) {
             return option2;
         }
-        return null;
+        return option2;
 
        // System.out.println("kkkdf");
     }
     public String getOption3(int i) {
-        String option3 = choices[i];
+        String option3 = choices[i][2];
         if (i % 3 == 2) {
             return option3;
         }
-        return null;
+        return option3;
     }
 }

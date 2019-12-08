@@ -16,7 +16,7 @@ public class Main2Activity extends AppCompatActivity {
     Button option2; // Button B
     Button option3; // Button C.
     Button mainMenu; // Main menu button
-    int max = 23;
+    int max = 9;
 
     private int numberOfQuestions = 0;
     private String answers;
@@ -46,6 +46,7 @@ public class Main2Activity extends AppCompatActivity {
                     //add else statement and make worng sound
                 } else {
                     updateQuestions();
+                    //System.out.println("hi");
                 }
             }
         });
@@ -76,19 +77,13 @@ public class Main2Activity extends AppCompatActivity {
             Intent intent = new Intent(Main2Activity.this, MainActivity.class);
             startActivity(intent);
         });
-
-
-
-
-
-
     }
     private void updateQuestions() {
         System.out.println("hi");
         equations.setText(equationLibrary.getQuestions(numberOfQuestions)); //updates the question in the textview
         option1.setText(equationLibrary.getOption1(numberOfQuestions)); // updates the button text for Button A
-        option2.setText(equationLibrary.getOption2(numberOfQuestions  + 1)); // updates the button text for Button B
-        option3.setText(equationLibrary.getOption3(numberOfQuestions + 2)); // updates the button text for Button C
+        option2.setText(equationLibrary.getOption2(numberOfQuestions)); // updates the button text for Button B
+        option3.setText(equationLibrary.getOption3(numberOfQuestions)); // updates the button text for Button C
         //equation library is the object from Equation class
         //getQuestion, and getOption are methods from the Equation class
 
