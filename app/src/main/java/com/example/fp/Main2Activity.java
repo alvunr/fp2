@@ -13,7 +13,7 @@ public class Main2Activity extends AppCompatActivity {
     TextView equations; // Question / equation text view
     Button option1; // button A
     Button option2; // Button B
-    Button option3; // Button C
+    Button option3; // Button C.
     int max = 23;
 
     private int numberOfQuestions = 0;
