@@ -20,7 +20,8 @@
                 android:id="@+id/equationInViews"
                 android:layout_width="match_parent"
                 android:layout_height="93dp"
-                android:text="x + 5 = 10" />
+                android:text="x + 5 = 10"
+                android:textSize="36sp" />
 
 
             <Button
@@ -41,6 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="15" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -53,6 +55,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Main Menu" />
+
+            <TextView
+                android:id="@+id/scoreId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score:"
+                android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,53 +13,62 @@
         android:id="@+id/switch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x + 5 = 10" />
+        android:text="             x + 5 = 10"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x *  6 = 600" />
+        android:text="             x *  6 = 600"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x + 71 = 100" />
+        android:text="             x + 71 = 100"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x / 8 = 15" />
+        android:text="             x / 8 = 15"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x + 9 = 10" />
+        android:text="             x + 9 = 10"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x - 24 = 10" />
+        android:text="             x - 24 = 10"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x + 41 = 30" />
+        android:text="             x + 41 = 30"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x * 3 = 42" />
+        android:text="             x * 3 = 42"
+        android:textSize="24sp" />
 
     <Switch
         android:id="@+id/switch9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="             x + 4 = 10" />
+        android:text="             x + 4 = 10"
+        android:textSize="24sp" />
 </LinearLayout>
