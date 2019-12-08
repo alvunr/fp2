@@ -13,32 +13,34 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="373dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/equationInViews"
                 android:layout_width="match_parent"
                 android:layout_height="93dp"
-                android:text="TextView" />
+                android:text="x + 5 = 10" />
+
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="-5" />
+            android:textColor= "#fff"
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="5" />
 
             <Button
                 android:id="@+id/button10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="15" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,16 +49,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/Next"
+                android:id="@+id/mainMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="next" />
-
-            <Button
-                android:id="@+id/Previous"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="previous" />
+                android:text="Main Menu" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.fp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class Main2Activity extends AppCompatActivity {
     Button option1; // button A
     Button option2; // Button B
     Button option3; // Button C.
+    Button mainMenu; // Main menu button
     int max = 23;
 
     private int numberOfQuestions = 0;
@@ -28,6 +30,8 @@ public class Main2Activity extends AppCompatActivity {
         option1 = findViewById(R.id.button8);
         option2 = findViewById(R.id.button9);
         option3 = findViewById(R.id.button10);
+        mainMenu = findViewById(R.id.mainMenu);
+
 
         equations = findViewById(R.id.equationInViews);
 
@@ -67,6 +71,16 @@ public class Main2Activity extends AppCompatActivity {
                 }
             }
         });
+
+        mainMenu.setOnClickListener(view -> {
+            Intent intent = new Intent(Main2Activity.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+
+
+
+
 
     }
     private void updateQuestions() {
