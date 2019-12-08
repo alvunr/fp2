@@ -13,10 +13,14 @@ public class SoundPlayer {
     public SoundPlayer(Context context) {
         soundPool = new SoundPool(2, AudioManager.STREAM_MUSIC, 0);
         wrongSound = soundPool.load(context, R.raw.ycndi, 1);
+        rightSound = soundPool.load(context, R.raw.nw, 1);
     }
 
     public void playWrongSound() {
         soundPool.play(wrongSound, 1.0f, 1.0f, 1,0, 1.0f);
+    }
+    public void playRightSound() {
+        soundPool.play(rightSound, 1.0f, 1.0f, 1,0, 1.0f);
     }
 
 }

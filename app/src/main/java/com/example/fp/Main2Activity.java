@@ -52,6 +52,7 @@ public class Main2Activity extends AppCompatActivity {
                 if (option1.getText() == answers) {
                     score = score + 1;
                     updateScore(score);
+                    soundz.playRightSound();
                     updateQuestions();
                     //Code for web API should be added here
                     //make correct sound
@@ -71,6 +72,7 @@ public class Main2Activity extends AppCompatActivity {
                 if (option2.getText() == answers) {
                     score = score + 1;
                     updateScore(score);
+                    soundz.playRightSound();
                     updateQuestions();
                 }
                 else {
@@ -86,6 +88,7 @@ public class Main2Activity extends AppCompatActivity {
                 if (option3.getText() == answers) {
                     score = score + 1;
                     updateScore(score);
+                    soundz.playRightSound();
                     updateQuestions();
                 }
                 else {
