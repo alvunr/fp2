@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
     Button option2; // Button B
     Button option3; // Button C.
     Button mainMenu; // Main menu button
-    int max = 9;
+    int max = 8;
 
 
     private int numberOfQuestions = 0;
@@ -108,27 +108,33 @@ public class Main2Activity extends AppCompatActivity {
 
     }
 
-    private void updateScore(int a) {
+    private void updateScore(int i) {
+        System.out.println(scoreTextBox);
         scoreTextBox.setText("Score: " + score);
     }
+
 
 
 
     private void updateQuestions() {
         //System.out.println("hi");
         equations.setText(equationLibrary.getQuestions(numberOfQuestions)); //updates the question in the textview
+        System.out.println(equations);
         option1.setText(equationLibrary.getOption1(numberOfQuestions)); // updates the button text for Button A
+        System.out.println(option1);
         option2.setText(equationLibrary.getOption2(numberOfQuestions)); // updates the button text for Button B
+        System.out.println(option2);
         option3.setText(equationLibrary.getOption3(numberOfQuestions)); // updates the button text for Button C
+        System.out.println(option3);
         //scoreTextBox.setText(score);
         //equation library is the object from Equation class
         //getQuestion, and getOption are methods from the Equation class
 
         answers = equationLibrary.getAnswers(numberOfQuestions); // updates the answers
         numberOfQuestions++; // adds more questions to the game
+        Intent menuintent = new Intent(Main2Activity.this, GoodJob.class);
         if (numberOfQuestions == max) {
             numberOfQuestions = 0;
         }
-
     }
 }

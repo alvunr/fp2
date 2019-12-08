@@ -40,6 +40,7 @@ public class Equation extends AppCompatActivity {
 //        // String[] array = {a, b, c, d, e, f, g, h, k};
 //        return " ";
 //    }
+
     private String questions [] = {
             "x + 5 = 10","x * 6 = 600", "x + 71 = 100", "x / 8 = 15", "x + 9 = 10",
             "x - 24 = 10", "x + 41 = 30","x * 3 = 42", "x + 4 = 10"
