@@ -3,6 +3,7 @@ package com.example.fp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -33,18 +34,18 @@ public class Main2Activity extends AppCompatActivity {
         equations = findViewById(R.id.equationInViews);
         scoreTextBox = findViewById(R.id.scoreId);
         option1 = findViewById(R.id.button8);
+        //option1.setTextColor(Color.BLACK);
         option2 = findViewById(R.id.button9);
         option3 = findViewById(R.id.button10);
         mainMenu = findViewById(R.id.mainMenu);
 
 
 
+
+
         equations = findViewById(R.id.equationInViews);
-        //final MediaPlayer soundzz = MediaPlayer.create(this, R.raw.ycndi);
         SoundPlayer soundz = new SoundPlayer(this);
-
         updateQuestions();
-
 
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,14 +55,9 @@ public class Main2Activity extends AppCompatActivity {
                     updateScore(score);
                     soundz.playRightSound();
                     updateQuestions();
-                    //Code for web API should be added here
-                    //make correct sound
-                    //add else statement and make wrong sound
                 }
                 else {
                     soundz.playWrongSound();
-                    //wrong sound affect
-                    //System.out.println("hi");
                 }
             }
         });
@@ -77,7 +73,6 @@ public class Main2Activity extends AppCompatActivity {
                 }
                 else {
                     soundz.playWrongSound();
-                    // sound wrong affect
                 }
             }
         });
@@ -93,7 +88,6 @@ public class Main2Activity extends AppCompatActivity {
                 }
                 else {
                     soundz.playWrongSound();
-                    //sound wrong affect
                 }
             }
         });
@@ -103,10 +97,8 @@ public class Main2Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-
-
     }
+
 
     private void updateScore(int i) {
         System.out.println(scoreTextBox);
@@ -114,27 +106,18 @@ public class Main2Activity extends AppCompatActivity {
     }
 
 
-
-
     private void updateQuestions() {
-        //System.out.println("hi");
         equations.setText(equationLibrary.getQuestions(numberOfQuestions)); //updates the question in the textview
-        System.out.println(equations);
         option1.setText(equationLibrary.getOption1(numberOfQuestions)); // updates the button text for Button A
-        System.out.println(option1);
         option2.setText(equationLibrary.getOption2(numberOfQuestions)); // updates the button text for Button B
-        System.out.println(option2);
         option3.setText(equationLibrary.getOption3(numberOfQuestions)); // updates the button text for Button C
-        System.out.println(option3);
-        //scoreTextBox.setText(score);
-        //equation library is the object from Equation class
-        //getQuestion, and getOption are methods from the Equation class
-
         answers = equationLibrary.getAnswers(numberOfQuestions); // updates the answers
         numberOfQuestions++; // adds more questions to the game
-        Intent menuintent = new Intent(Main2Activity.this, GoodJob.class);
         if (numberOfQuestions == max) {
-            numberOfQuestions = 0;
+//            numberOfQuestions = 0;
+//            score = -1;
+            Intent intent = new Intent(Main2Activity.this, GoodJob.class);
+            startActivity(intent);
         }
     }
 }
