@@ -40,19 +40,3 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-//    String a = "x + 5 = 10";
-//    String b = "x + 6 = 10";
-//    String c = "x + 7 = 10";
-//    String d = "x + 8 = 10";
-//    String e = "x + 9 = 10";
-//    String f = "x + 1 = 10";
-//    String g = "x + 2 = 10";
-//    String h = "x + 3 = 10";
-//    String k = "x + 4 = 10";
-//    public String quizMethod() {
-//        String[] array = {a, b, c, d, e, f, g, h, k};
-//        for (int i = 0; i < array.length; i++) {
-//            return array[i];
-//        }
-//        return "";
-//    }

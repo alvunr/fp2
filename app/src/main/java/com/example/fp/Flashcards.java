@@ -157,6 +157,4 @@ public class Flashcards extends AppCompatActivity {
             }
         });
     }
-
-    //then on another method or where you want
 }
