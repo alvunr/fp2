@@ -24,4 +24,4 @@ public class Rules extends AppCompatActivity {
     }
 }
 
-// hi
+// hi.
